@@ -1,0 +1,7 @@
+.main{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 70% 30%;
+    height: auto;
+    justify-items: center;
+}

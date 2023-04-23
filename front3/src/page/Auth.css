@@ -1,0 +1,135 @@
+label{
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    color: #707070;
+}
+
+button{
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 66px;
+}
+
+span{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    color: #707070;
+    width: 600px;
+    margin-bottom: 15px;
+}
+
+.beatiful{
+    display: flex;
+    background-image: url(../photo/login-photo.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 21px;
+    width: 662px;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 25px;
+
+}
+body{
+    background-color: white;
+    width: auto;
+    height: auto;
+}
+.main-window-auth {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    margin-top: 50px;
+    margin-left: 35px;
+    height: 80px;
+}
+.authorization {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    width: auto;
+    height: 100vh;
+}
+.buttons-auth {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+button + button{
+    margin-left: 10px;
+}
+
+.auth-button {
+    box-sizing: border-box;
+    width: 50%;
+    height: 75px;
+    border: 1px solid #CBCBCB;
+    border-radius: 8px;
+    background-color: #CBCBCB;
+    margin-right: 25px;
+
+}
+
+.inputs-auth {
+    margin-bottom: 25px;
+}
+
+button.registration-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-step {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: row;
+}
+
+input[type="text"]{
+    width: 225px;
+    height: 75px;
+    border-radius: 8px;
+    border: 1px solid #CBCBCB;
+
+}
+
+.select{
+
+}
+
+#patronymic{
+    display: flex;
+    width: 90%;
+}
+
+.inputs-auth input[type="date"]{
+    width: 225px;
+    height: 75px;
+    border-radius: 8px;
+
+}
+
+.registration-btn{
+    display: flex;
+    width: 91%;
+    box-sizing: border-box;
+    height: 75px;
+    border: 1px solid #CBCBCB;
+    border-radius: 8px;
+    background-color: white;
+    margin-right: 50px;
+    align-items: center;
+}
