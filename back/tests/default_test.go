@@ -19,7 +19,7 @@ func init() {
 	beego.TestBeegoInit(apppath)
 }
 
-// TestGet is a sample to run an endpoint test
+// TestGet is a sample to run an endpoint back
 func TestGet(t *testing.T) {
 	r, _ := http.NewRequest("GET", "/v1/object", nil)
 	w := httptest.NewRecorder()
@@ -27,12 +27,18 @@ func TestGet(t *testing.T) {
 
 	logs.Info("testing", "TestGet", "Code[%d]\n%s", w.Code, w.Body.String())
 
-	Convey("Subject: Test Station Endpoint\n", t, func() {
-		Convey("Status Code Should Be 200", func() {
-			So(w.Code, ShouldEqual, 200)
-		})
-		Convey("The Result Should Not Be Empty", func() {
-			So(w.Body.Len(), ShouldBeGreaterThan, 0)
-		})
-	})
+	Convey(
+		"Subject: Test Station Endpoint\n", t, func() {
+			Convey(
+				"Status Code Should Be 200", func() {
+					So(w.Code, ShouldEqual, 200)
+				},
+			)
+			Convey(
+				"The Result Should Not Be Empty", func() {
+					So(w.Body.Len(), ShouldBeGreaterThan, 0)
+				},
+			)
+		},
+	)
 }
